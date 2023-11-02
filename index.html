@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>To jo List</title>
+  </head>
+  <body>
+    <section class="sec1">
+      <div class="container">
+        <h1>To Do List</h1>
+        <div class="khat1">
+          <input type="text" placeholder="Enter todo" class="todo-text" />
+          <input type="date" class="todo-date" />
+          <button class="add">Add</button>
+          <button class="add edit">Edit</button>
+        </div>
+        <div class="khat2">
+          <div class="fart">
+            <button class="s" data-filter="all">All</button>
+            <button class="s" data-filter="pending">Pending</button>
+            <button class="s" data-filter="completed">Completed</button>
+          </div>
+          <div><button class="del">Deleted All</button></div>
+        </div>
+      </div>
+    </section>
+    <section class="sec2">
+      <div class="alert"></div>
+    </section>
+    <section class="sec3">
+      <div class="container-table">
+        <table>
+          <thead>
+            <tr>
+              <th class="th1">Task</th>
+              <th class="">Date</th>
+              <th class="">Status</th>
+              <th class="th2">Action</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+    <script src="./performance.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
