@@ -125,7 +125,7 @@ const addhandler = (event) => {
 // -----------------
 
 const deletedhandler = () => {
-  if (todo.length ) {
+  if (todo.length) {
     todo = [];
     saveToLocal();
     display();
@@ -181,3 +181,4 @@ add.addEventListener("click", addhandler);
 deletedAll.addEventListener("click", deletedhandler);
 Edit.addEventListener("click", ApplyEditHandler);
 filterBt.forEach((item) => item.addEventListener("click", filterHandler));
+console.log("1");
